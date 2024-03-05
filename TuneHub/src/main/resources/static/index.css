@@ -1,0 +1,14 @@
+/* index.css */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+}
+
+a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

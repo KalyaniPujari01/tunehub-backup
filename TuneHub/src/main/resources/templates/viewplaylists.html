@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			view playlist
+		</title>
+		<link rel=stylesheet type=text/css th:href="@{/viewplaylist.css}">
+	</head>
+	<body>
+		<table border="1">
+			 <thead>
+				<tr>
+					<th>name</th>
+				</tr>
+			 </thead>
+			<tbody>
+				<tr th:each="all:${playlists}">
+					<td th:text="${all.id}"></td>	
+					<td th:text="${all.name}"></td>	
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
+

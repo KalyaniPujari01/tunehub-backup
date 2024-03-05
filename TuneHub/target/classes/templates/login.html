@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LOGIN</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/login.css}">
+	</head>
+	<body>
+		
+		<div class="login">
+      <form action="validate" method="post" class="form-login">
+        <p>LOGIN</p>
+        <br />
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          class="input-fields"
+        />
+        <br />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          class="input-fields"
+        />
+        <br />
+        <input type="submit" value="SIGN IN" class="loginbtn" />
+        <br />
+        <br />
+        <a href="#">Forgot Password?</a>
+      </form>
+    </div>
+	</body>
+</html>

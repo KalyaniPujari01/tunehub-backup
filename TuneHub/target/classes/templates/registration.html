@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+	<head>
+		<title>REGISTER</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/registration.css}">
+	</head>
+	<body>
+	      <div class="registration">
+      <form action="register" method="post" class="register-form">
+        <p>REGISTRATION FORM</p>
+
+        <input
+          type="text"
+          placeholder="UserName"
+          name="username"
+          class="input-fields"
+        />
+        <br />
+        <br />
+
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          class="input-fields"
+        />
+        <br />
+        <br />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          class="input-fields"
+        />
+        <br />
+        <br />
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" />
+        <label class="radiofields">male</label>
+        <input type="radio" name="gender" value="female" />
+        <label class="radiofields">female</label>
+        <input type="radio" name="gender" value="other" />
+        <label class="radiofields">others</label>
+        <br />
+        <br />
+        <label>Role</label>
+        <input type="radio" name="role" value="admin" />
+        <label class="radiofields">Admin</label>
+        <input type="radio" name="role" value="customer" />
+        <label class="radiofields">User</label>
+        <br />
+        <br />
+        <textarea
+          name="address"
+          placeholder="Enter Address"
+          class="addarea"
+        ></textarea>
+        <br />
+        <br />
+        <input type="submit" value="SIGN UP" class="registerbtn" />
+      </form>
+    </div>
+	</body>
+</html>
